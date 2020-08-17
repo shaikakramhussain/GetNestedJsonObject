@@ -1,0 +1,40 @@
+<h1>Get Data From Json PlaceHolder Server ANGULAR</h1>
+<hr>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>User Name</th>
+    <th>Email</th>
+    <!-- <th>Address</th> -->
+    <th>Street</th>
+    <th>Suite</th>
+    <th>City</th>
+    <th>Zip Code</th>
+    <!-- <th>Geo</th> -->
+    <th>Lat</th>
+    <th>Long</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Name</th>
+    <th>CatchPhrase</th>
+    <th>bs</th>
+  </tr>
+  <tr *ngFor= 'let d of fetchData'>
+    <td>{{d.id}}</td>
+    <td>{{d.name}}</td>
+    <td>{{d.username}}</td>
+    <td>{{d.email}}</td>
+    <td>{{d.address.street}}</td>
+    <td>{{d.address.suite}}</td>
+    <td>{{d.address.city}}</td>
+    <td>{{d.address.zipcode}}</td>
+    <td>{{d.address.geo.lat}}</td>
+    <td>{{d.address.geo.lng}}</td>
+    <td>{{d.phone}}</td>
+    <td>{{d.website}}</td>
+    <td>{{d.company.name}}</td>
+    <td>{{d.company.catchPhrase}}</td>
+    <td>{{d.company.bs}}</td> 
+  </tr>
+</table>
